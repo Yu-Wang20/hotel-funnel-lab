@@ -1,1 +1,64 @@
-# Hotel Funnel Lab | 国际酒店预订全链路漏斗优化与 AI 资能实验平台\n\nA comprehensive demo platform for Trip.com's international hotel booking business that reconstructs the entire booking funnel and layers AI-powered experimentation on top. The project spans the full funnel from **search → list → detail → checkout → payment**, introduces full‑price transparency, summarises complex policies with AI, instruments 15+ core events across 6 funnel stages, and offers a unified console for funnel analytics, A/B testing, and documentation.\n\n## Live Demo\n\nA working demo is available at [https://hotelfunnel-fiurddsy.manus.space](https://hotelfunnel-fiurddsy.manus.space).\n\n## Purpose\n\nTraditional hotel booking experiences suffer from opaque pricing, long and confusing policy disclosures, and a lack of instrumentation for experimentation. Hotel Funnel Lab addresses these pain points by:\n\n- **Making pricing transparent**: the Total Price component unbundles base price, fees, and taxes to avoid bill shock.\n- **Summarising policies with AI**: a policy assistant powered by large language models distills cancellation, breakfast and deposit rules into concise bullet points.\n- **Instrumenting the funnel**: 15+ core events across 6 stages are tracked for funnel conversion analysis and segment drop‑off detection.\n- **Enabling experimentation**: an A/B testing framework allows experimentation on ranking algorithms, AI assistants, price display, and more, with configuration and analytics in one interface.\n- **Providing documentation**: a built‑in documentation hub provides transparency around metrics definitions, policies, and experiment setups.\n\n## Key Features\n\n- **Search & Listing Pages**  \n  - Full‑price transparency with breakdown of base rate, taxes and fees.  \n  - Sorting and filtering; map view integration; support for multiple experiment dimensions (e.g., ranking algorithms).  \n\n- **Detail Page**  \n  - Comprehensive hotel descriptions with dynamic image galleries.  \n  - AI Policy Assistant summarising cancellation, breakfast, deposit and other booking policies into clear bullet points.  \n  - Event instrumentation for page view and call‑to‑action interactions.  \n\n- **Booking Flow & Payment**  \n  - Step‑by‑step booking with persistent price breakdown and upsell modules.  \n  - AI summarisation of additional policies.  \n  - End‑to‑end event tracking to identify drop‑off points.  \n\n- **Analytics Dashboard**  \n  - Funnel analysis across 6 stages: search results, listing, hotel detail, booking form, price confirmation, payment.  \n  - Visualisation of conversion rates, drop‑off reasons and cohort performance.  \n\n- **A/B Testing Framework**  \n  - Configure experiments on ranking, AI assistant content, price displays and more.  \n  - Support for multiple experiment dimensions and sample size calculations.  \n  - Experiment results integrated into the analytics dashboard.  \n\n- **Documentation Hub**  \n  - Centralised definitions of metrics, events and policy categories.  \n  - Guides for integrating optional modules (e.g., Google Maps).  \n  - Transparent differentiation between mock data and real Trip.com content.  \n\n## Problems Solved\n\n- **Opaque Pricing** – displays the total price including fees and taxes up front, eliminating confusion at checkout.  \n- **Lengthy Policy Text** – uses AI to summarise complicated policy descriptions into digestible points.  \n- **Lack of Instrumentation** – instruments the full funnel with event tracking to enable conversion analysis and experimentation.  \n- **Missing Experimentation Platform** – provides built‑in A/B testing tools to test different hypotheses and measure their impact.  \n\n## Tech Stack\n\n- Front‑end: Next.js, TypeScript, Tailwind CSS  \n- Back‑end: Node.js / FastAPI (depending on implementation)  \n- Database & Analytics: PostgreSQL / ClickHouse  \n- AI Components: OpenAI / LLM summarisation via serverless functions  \n- Deployment: Docker + cloud hosting  \n\nThis lab demonstrates how AI and data instrumentation can enhance the booking experience and serve as a template for experimentation on e‑commerce funnels.
+# Hotel Funnel Lab
+**A comprehensive hotel booking funnel optimization and AI-powered experiment platform for Trip.com-like international booking flows.**
+
+This project is an end-to-end product + analytics laboratory that simulates a cross-border hotel booking journey and provides a practical framework to:
+- instrument key funnel events,
+- diagnose drop-offs,
+- run controlled experiments (A/B tests),
+- and ship AI-assisted product improvements (e.g., policy explanations and decision support).
+
+> Positioning: A production-minded portfolio project demonstrating product thinking, analytics rigor, and full-stack implementation for international travel commerce.
+
+---
+
+## Problem Statement
+
+International hotel booking has structurally higher friction than domestic booking due to:
+- **Price opacity** (tax/fee disclosure varies by country and supplier),
+- **Policy complexity** (cancellation, prepayment, check-in rules, exceptions),
+- **Decision overload** (room types, bundles, benefits, loyalty rules),
+- and **trust gaps** (inconsistent content, unclear value comparisons).
+
+These issues often concentrate at the **Detail → Checkout** portion of the funnel, where users abandon even after strong intent.
+
+---
+
+## What This Project Delivers
+
+### Product Modules (User-Facing)
+- **Search & List Flow**
+  - Destination/date-based exploration flow
+  - Emphasis on transparency controls such as **Total Price** vs. base price views
+- **Hotel Detail Page (Key Optimization Surface)**
+  - Structured presentation of price breakdown, policies, and room options
+  - AI policy assistant to reduce confusion and support decision-making
+- **Checkout Journey**
+  - Minimal but complete path to demonstrate conversion flow
+  - Forms + validation + order confirmation
+
+### Analytics & Experimentation (Operator-Facing)
+- **Event Tracking & Funnel Analytics**
+  - Standardized event taxonomy (search, list view, item click, detail view, checkout start, purchase)
+  - Funnel conversion breakdown and drop-off diagnosis
+- **A/B Testing Harness**
+  - Experiment configuration (variant assignment, exposure tracking)
+  - KPI impact comparison for key metrics (CTR, conversion, time-to-purchase, bounce)
+- **Dashboard**
+  - Core KPIs, trend charts, and experiment views for analysis and iteration
+
+---
+
+## Repository Structure
+
+- `client/`  
+  Frontend application (booking UI + analytics dashboard).
+- `server/`  
+  Backend services (APIs, experiment assignment, event ingestion).
+- `shared/`  
+  Shared types/utilities used across client and server.
+- `drizzle/`  
+  Database schema/migrations (Drizzle ORM).
+- `.manus/db`  
+  Local development database artifacts (generated during development).
+- `patches/`  
+  Patch files and local fixes applied during development.
