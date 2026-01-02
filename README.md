@@ -1,6 +1,6 @@
-# Hotel Funnel Lab — International Hotel Booking Experiment Platform
+# International Hotel Booking Experiment Platform
 
-Hotel Funnel Lab is a product + analytics prototype that demonstrates how to improve an **international hotel booking funnel** through:
+This platform is a product + analytics prototype that demonstrates how to improve an **international hotel booking funnel** through:
 - **Transparent pricing (net vs. total price with taxes/fees)**
 - **AI-assisted policy understanding (cancellation / taxes / ID requirements)**
 - **Funnel instrumentation & KPI dashboards**
