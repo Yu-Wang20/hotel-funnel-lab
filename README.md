@@ -114,26 +114,32 @@ This project is intentionally built as an MVP + platform skeleton. Strong next s
 - Containerization + repeatable deployments
 
 ---
+This is the entry point of the funnel. Users start a hotel search and set their core trip parameters, while the product surfaces pricing transparency early.
 
-## Screenshots (recommended)
-Create an `assets/` folder and add screenshots, then embed like:
+What you can do
+- Enter a destination (city or hotel name)
+- Select check-in and check-out dates
+- Select number of guests
+- Click Search hotels to start the booking journey
+<img width="1569" height="793" alt="Screenshot 2026-01-02 at 09 21 37" src="https://github.com/user-attachments/assets/cffc4d3a-d7da-4507-b4a9-d294e2ea37ef" />
 
-![Search](assets/search.png)
-![Dashboard](assets/dashboard.png)
-![Experiments](assets/experiments.png)
-![Docs](assets/docs.png)
+What you can do
+-Browse Popular destinations cards (e.g., Tokyo, Singapore, Paris, New York, Dubai, Hong Kong)
+-Understand the platform’s core capabilities at a glance:
+-AI Policy Assistant — summarizes long policy text and extracts key clauses
+-Full price transparency — one-click switch between net vs total price
+-A/B Experiment — experiment design and statistical analysis workflow
+<img width="1566" height="875" alt="Screenshot 2026-01-02 at 09 21 52" src="https://github.com/user-attachments/assets/4c0040a0-a82e-446f-a4db-d128158d14ab" />
 
----
+The analytics hub. It monitors the funnel end-to-end and highlights where conversion drops occur.
+<img width="1564" height="875" alt="Screenshot 2026-01-02 at 09 22 08" src="https://github.com/user-attachments/assets/85cac9c4-766f-44b9-897e-28e0cbdb708b" />
 
-## License
-Choose one:
-- MIT (recommended for portfolios)
-- Apache-2.0
-- GPL-3.0
+The experimentation console. It helps you define hypotheses, allocate traffic, and interpret results.
+<img width="1568" height="802" alt="Screenshot 2026-01-02 at 09 22 33" src="https://github.com/user-attachments/assets/afdbfd3d-1b31-4cc9-b037-5a04c22b60cb" />
 
-Add a `LICENSE` file accordingly.
+The product documentation hub. It makes the project “portfolio-grade” by showing structured product thinking and measurement design.
+<img width="1568" height="876" alt="Screenshot 2026-01-02 at 09 22 45" src="https://github.com/user-attachments/assets/ab7eec64-d129-44ab-a814-574adf0d6a53" />
 
----
 
 ## Disclaimer
 This repository is a product/analytics demo. Any metrics shown in the UI may be illustrative unless wired to real event tracking and data pipelines.
