@@ -62,3 +62,7 @@ These issues often concentrate at the **Detail → Checkout** portion of the fun
   Local development database artifacts (generated during development).
 - `patches/`  
   Patch files and local fixes applied during development.
+
+Demo & Screenshots
+Example:
+![Funnel Dashboard](./docs/screenshots/funnel-dashboard.png)
